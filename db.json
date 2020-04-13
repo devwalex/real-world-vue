@@ -13,7 +13,14 @@
       "location": "Meow Town",
       "date": "2019-01-03T21:54:00.000Z",
       "time": "2:00",
-      "attendees": [{ "name": "Usman Salami" }, { "name": "Olawale Josh" }]
+      "attendees": [
+        {
+          "name": "Usman Salami"
+        },
+        {
+          "name": "Olawale Josh"
+        }
+      ]
     },
     {
       "id": 8419988,
@@ -28,7 +35,11 @@
       "location": "Catlandia",
       "date": "2019-01-31T22:09:00.000Z",
       "time": "7:00",
-      "attendees": [{ "name": "Usman Salami" }]
+      "attendees": [
+        {
+          "name": "Usman Salami"
+        }
+      ]
     },
     {
       "id": 4582797,
@@ -44,10 +55,52 @@
       "date": "2019-02-02T23:27:00.000Z",
       "time": "1:00",
       "attendees": [
-        { "name": "Usman Salami" },
-        { "name": "Olawale Josh" },
-        { "name": "Kelani Hart" }
+        {
+          "name": "Usman Salami"
+        },
+        {
+          "name": "Olawale Josh"
+        },
+        {
+          "name": "Kelani Hart"
+        }
       ]
+    },
+    {
+      "id": 652543,
+      "category": "education",
+      "organizer": {
+        "id": "366536",
+        "name": "Usman Wale"
+      }
+    },
+    {
+      "id": 696244,
+      "category": "education",
+      "organizer": {
+        "id": "366536",
+        "name": "Usman Wale"
+      },
+      "title": "Dev C",
+      "description": "",
+      "location": "",
+      "date": "2020-04-10T17:14:00.000Z",
+      "time": "4:00",
+      "attendees": []
+    },
+    {
+      "id": 236044,
+      "category": "education",
+      "organizer": {
+        "id": "366536",
+        "name": "Usman Wale"
+      },
+      "title": "Student Developer Circle",
+      "description": "This event is for programmer",
+      "location": "Lekki",
+      "date": "2020-04-24T17:27:00.000Z",
+      "time": "16:00",
+      "attendees": []
     }
   ]
 }
