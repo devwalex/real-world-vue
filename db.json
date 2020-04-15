@@ -231,6 +231,20 @@
       "date": "",
       "time": "5:00",
       "attendees": []
+    },
+    {
+      "id": 566709,
+      "category": "community",
+      "organizer": {
+        "id": "366536",
+        "name": "Usman"
+      },
+      "title": "Community Service ",
+      "description": "Event",
+      "location": "",
+      "date": "2020-04-03T16:13:00.000Z",
+      "time": "9:00",
+      "attendees": []
     }
   ]
 }
