@@ -22,12 +22,26 @@ export default {
     }
   },
   actions: {
-    createEvent({ commit }, event) {
-      EventService.postEvent(event).then(() => {
-        commit('ADD_EVENT', event)
-      })
+    createEvent({ commit, dispatch }, event) {
+      EventService.postEvent(event)
+        .then(() => {
+          commit('ADD_EVENT', event)
+          const notification = {
+            type: 'success',
+            message: 'Event Created Successfully'
+          }
+          dispatch('notification/add', notification, { root: true })
+        })
+        .catch(error => {
+          const notification = {
+            type: 'error',
+            message: 'There was an error while creating events ' + error.message
+          }
+          dispatch('notification/add', notification, { root: true })
+          throw error
+        })
     },
-    fetchEvents({ commit }, { perPage, page }) {
+    fetchEvents({ commit, dispatch }, { perPage, page }) {
       EventService.getEvents(perPage, page)
         .then(response => {
           commit(
@@ -37,10 +51,15 @@ export default {
           commit('SET_EVENTS', response.data)
         })
         .catch(error => {
-          console.log('There was an error:', error.response)
+          const notification = {
+            type: 'error',
+            message:
+              'There was an error while fetching events: ' + error.message
+          }
+          dispatch('notification/add', notification, { root: true })
         })
     },
-    fetchEvent({ commit, getters }, id) {
+    fetchEvent({ commit, getters, dispatch }, id) {
       let event = getters.getEventById(id)
       if (event) {
         commit('SET_EVENT', event)
@@ -50,7 +69,12 @@ export default {
             commit('SET_EVENT', response.data)
           })
           .catch(error => {
-            console.log(error)
+            const notification = {
+              type: 'error',
+              message:
+                'There was an error while fetching event: ' + error.message
+            }
+            dispatch('notification/add', notification, { root: true })
           })
       }
     }
