@@ -259,6 +259,34 @@
       "date": "2020-05-14T09:25:00.000Z",
       "time": "4:00",
       "attendees": []
+    },
+    {
+      "id": 751461,
+      "category": "housing",
+      "organizer": {
+        "id": "366536",
+        "name": "Usman"
+      },
+      "title": "Makinde",
+      "description": "MMM",
+      "location": "Your Houser",
+      "date": "2020-04-23T11:50:00.000Z",
+      "time": "11:00",
+      "attendees": []
+    },
+    {
+      "id": 260804,
+      "category": "",
+      "organizer": {
+        "id": "366536",
+        "name": "Usman"
+      },
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
     }
   ]
 }
