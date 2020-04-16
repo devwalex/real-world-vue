@@ -245,6 +245,20 @@
       "date": "2020-04-03T16:13:00.000Z",
       "time": "9:00",
       "attendees": []
+    },
+    {
+      "id": 420924,
+      "category": "housing",
+      "organizer": {
+        "id": "366536",
+        "name": "Usman"
+      },
+      "title": "Real Estate Event",
+      "description": "Estate Management",
+      "location": "Amen Estate",
+      "date": "2020-05-14T09:25:00.000Z",
+      "time": "4:00",
+      "attendees": []
     }
   ]
 }
